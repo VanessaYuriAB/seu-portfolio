@@ -1,49 +1,159 @@
-# Seu Portifólio
+# Seu Portfólio
 
-> Este é um **projeto guiado educacional**, desenvolvido durante a **Sprint 2 – Layout de
-> Página e Semântica** do curso de Desenvolvimento Web da **TripleTen**.
+> Este é um **projeto educacional guiado** desenvolvido durante o curso de Desenvolvimento
+> Web da **TripleTen**, iniciado na **Sprint 2 – Layout de Página e Semântica** e
+> posteriormente expandido na **Sprint 4 – HTML e CSS Avançados**.
 
-O objetivo principal foi aplicar **HTML semântico**, **meta tags** e **Flexbox**,
-construindo um layout organizado, acessível e compatível com boas práticas de SEO.
+O projeto simula um _portfólio pessoal_, utilizado como exercício prático para consolidar
+conceitos essenciais de **estruturação de páginas web**, **semântica HTML** e, em uma
+etapa posterior, **interatividade visual com CSS**.
 
 ---
 
 ## 📌 Visão Geral
 
-O site simula um **portfólio pessoal**, apresentando projetos organizados em seções
-temáticas, com foco em:
+O site apresenta projetos organizados em seções temáticas, com código progressivamente
+aprimorado ao longo das sprints do curso.
 
-- Clareza estrutural do `HTML`
-- Uso correto de _tags semânticas_
-- _Layout responsivo_ com `Flexbox`
-- Separação de responsabilidades entre `HTML` e `CSS`
-- _Boas práticas_ para _acessibilidade_ e _mecanismos de busca_
+Cada etapa teve um **objetivo educacional específico**, refletindo a evolução técnica do
+conteúdo estudado.
 
 ---
 
-## 🧠 Conceitos Trabalhados
+## 🧠 Conceitos Trabalhados - Sprint 2
 
-- **HTML Semântico**
-  - `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`
-- **Meta tags**
-  - `charset`, `viewport`, `description`, `keywords`, `author`
-- **Acessibilidade**
-  - Uso de `alt` em imagens
-  - Estrutura clara para leitores de tela
-- **CSS Flexbox**
-  - Layouts em linha e coluna
-  - Reordenação de elementos com `order`
-  - Alinhamento e espaçamento flexível
-- **Organização de layout**
-  - Componentização por classes
-  - Padrões reutilizáveis
+### _Meta Tags e Semântica HTML_
+
+Na **Sprint 2**, o projeto foi iniciado a partir de uma **estrutura base fornecida**, com
+foco exclusivo em **HTML semântico** e **boas práticas de marcação**, **sem aplicação de**
+**Flexbox ou layout avançado** nesta etapa.
+
+#### ✅ Idioma e SEO Básico
+
+- Definição do idioma da página com:
+
+```HTML
+<html lang="pt-BR">
+```
+
+- Uso do atributo **lang** em conteúdos específicos (ex: link em inglês no cabeçalho)
+
+#### ✅ Meta Tags
+
+Configuração das principais meta tags no `<head>`:
+
+- charset
+- viewport
+- description
+- keywords
+- author
+
+Objetivo:
+
+- Melhor compatibilidade entre navegadores
+- Preparação inicial para SEO
+
+---
+
+##### ✅ Substituição de `<div>` por Tags Semânticas
+
+Conversão de blocos genéricos em elementos HTML5 semânticos:
+
+- `<div class="header">` → `<header>`
+- `<div class="menu">` → `<nav>`
+- `<div class="main">` → `<main>`
+- `<div class="footer">` → `<footer>`
+
+📌 As _classes foram mantidas_, reforçando a separação entre _estrutura (HTML)_ e _estilo
+(CSS)_.
+
+---
+
+##### ✅ Organização Semântica do Conteúdo
+
+- Divisão da página em `<section>` com títulos claros
+- Uso correto da hierarquia de títulos:
+  - `<h1>` no cabeçalho
+  - `<h2>` para seções de conteúdo
+- Criação de identificadores (**id**) para navegação interna:
+  - **beginner**
+  - **libraries**
+  - **practice**
+
+---
+
+##### ✅ Listas Semânticas
+
+Conversão de blocos de projetos em listas reais:
+
+- `<ul>` para grupos de projetos
+- `<li>` para cada card
+
+Benefícios:
+
+- Marcação semanticamente correta
+- Melhor leitura por leitores de tela
+- Código mais legível e organizado
+
+Remoção dos estilos padrão das listas via CSS:
+
+```CSS
+list-style: none;
+padding: 0;
+margin: 0;
+```
+
+---
+
+##### ✅ Navegação Interna
+
+- Transformação dos itens do menu em **links âncora**
+- Ligação direta entre o `<nav>` e as `<section>` correspondentes
+
+Isso melhora:
+
+- Usabilidade
+- Acessibilidade
+- Estrutura semântica da página
+
+---
+
+## ✨ Atualizações Posteriores – Sprint 4
+
+### _Interatividade com CSS_
+
+Na **Sprint 4**, o projeto foi expandido para incluir **interações visuais e seletores
+avançados de CSS**, sem uso de `JavaScript`.
+
+#### 🔹 Pseudoclasses
+
+- `:hover`
+- `:focus`
+- `:last-of-type`
+- Controle de estados visuais de links e cards
+
+#### 🔹 Overlays Interativos
+
+- Links posicionados sobre os cards de projeto
+- Exibição controlada por `opacity`
+- Centralização com `Flexbox` (introduzido nesta etapa)
+
+#### 🔹 Pseudo‑elementos
+
+- Uso de `::before` e `::after`
+- Inserção dinâmica de saudações e símbolos
+
+#### 🔹 Seletores de Atributo
+
+- Alteração de conteúdo com base no atributo `lang`
+- Demonstração de controle contextual de estilo via `CSS`
 
 ---
 
 ## 🗂️ Estrutura do Projeto
 
 ```bash
-seu-portifolio/
+seu-portfolio/
 ├── .gitignore
 ├── index.html
 ├── README.md
@@ -52,30 +162,15 @@ seu-portifolio/
 
 ---
 
-## 🧩 Estrutura HTML (Resumo)
-
-- **Header**
-  - Título principal com link
-- **Navigation**
-  - Menu de navegação para seções internas
-- **Main**
-  - Seções organizadas por temas:
-    - Primeiros passos em HTML e CSS
-    - Bibliotecas JavaScript
-    - Atividades práticas com JavaScript
-- **Footer**
-  - Logotipo
-  - Direitos autorais
-  - Ícones de redes sociais
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3
-  - Flexbox
-- **Normalize.css** (via _CDN_ da _TripleTen_)
+- `HTML5`
+  - Semântica
+  - Meta tags
+- `CSS3`
+  - Seletores avançados
+  - Pseudoclasses e pseudo-elementos
+- `normalize.css` (via _CDN_ da _TripleTen_)
   - Garantia de consistência entre navegadores
 
 _🌐 `Content Delivery Network` (`Rede de Distribuição de Conteúdo`): infraestrutura de
@@ -86,14 +181,15 @@ servidores espalhados pelo mundo que serve arquivos estáticos com mais rapidez.
 
 ## 🎯 Objetivo Educacional
 
-Este projeto teve como finalidade **consolidar conceitos fundamentais** de front-end,
-servindo como base para projetos mais complexos nas próximas sprints.
+Consolidar fundamentos essenciais do desenvolvimento front‑end, preparando a base para:
 
-Além disso, o foco na semântica prepara o código para:
+- Layouts responsivos
+- `JavaScript`
+- Frameworks modernos
+- Portfólio técnico para processos seletivos
 
-- Melhor indexação por mecanismos de busca (_SEO_)
-- Maior acessibilidade
-- Manutenção e escalabilidade futuras
+O projeto reflete a **evolução progressiva do aprendizado**, respeitando os limites e
+objetivos de cada sprint.
 
 ---
 
@@ -102,7 +198,7 @@ Além disso, o foco na semântica prepara o código para:
 1. Clone o repositório:
 
 ```bash
-git clone git@github.com:VanessaYuriAB/seu-portifolio.git
+git clone git@github.com:VanessaYuriAB/seu-portfolio.git
 ```
 
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
@@ -115,4 +211,6 @@ git clone git@github.com:VanessaYuriAB/seu-portifolio.git
 
 Vanessa Yuri A. Brito
 
-Projeto desenvolvido durante o curso de Desenvolvimento Web da TripleTen.
+Projeto educacional desenvolvido durante o curso de Desenvolvimento Web da TripleTen e
+organizado como parte de um portfólio profissional no GitHub, com foco em clareza técnica
+e boas práticas.
