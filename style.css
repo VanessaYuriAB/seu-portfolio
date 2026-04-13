@@ -6,18 +6,38 @@ body {
   height: 95px;
   display: flex;
   max-width: 1330px;
-  min-width: 1280px;
-  margin: auto;
-}
-
-.title {
-  margin: auto;
+	min-width: 1280px;
+	margin: auto;
 }
 
 .header-link {
   font-size: 28px;
   text-decoration: none;
   color: #10191E;
+}
+
+.header-link:hover {
+  color: #2f80ed;
+}
+
+.header-link::after {
+  content: "!";
+}
+
+.header-link[lang="en"]::before {
+  content: "Hello, my name is";
+}
+
+.header-link[lang="fr"]::before {
+  content: "Bonjour, je m'appelle";
+}
+
+.header-link[lang="es"]::before {
+  content: "Hola, mi nombre es";
+}
+
+.title {
+  margin: auto;
 }
 
 .project {
@@ -38,13 +58,34 @@ body {
   background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_design.png);
 }
 
+.project-overlay {
+    background-color: rgba(0, 0, 100, .8);
+    height: 100%;
+    width: 100%; /* fizemos o link ocupar todo o bloco */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centralizou o texto usando flex */
+    text-decoration: none; /* removido sublinhado */
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    box-sizing: border-box; /* demos ao elemento uma borda interna para evitar que o contêiner se expanda */
+    padding: 20px; /* a margem interna para evitar que o texto toque nas bordas do contêiner */
+  opacity: 0;
+}
+
+.project-overlay:hover {
+  opacity: 1;
+}
+
 .flex-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 
 .flex-column {
@@ -103,11 +144,23 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1330px;
-  min-width: 1280px;
-  margin: 40px auto;
+	min-width: 1280px;
+	margin: 40px auto;
 }
 
+.menu-link:last-of-type {
+  margin-right: 0;
+}
+
+
+
+.menu-link:hover {
+  color: #2f80ed;
+}
+
+
 .project_vanilla {
+  
   width: 306px;
   height: 290px;
 }
@@ -130,12 +183,12 @@ body {
 
 .footer {
   min-height: 95px;
-  display: flex;
+	display: flex;
   align-items: center;
-  justify-content: space-around;
+	justify-content: space-around;
   max-width: 1330px;
-  min-width: 1280px;
-  margin: auto;
+	min-width: 1280px;
+	margin: auto;
 }
 
 .logo {
