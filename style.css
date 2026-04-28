@@ -3,41 +3,62 @@ body {
 }
 
 .header {
-  height: 95px;
   display: flex;
   max-width: 1330px;
-	min-width: 1280px;
-	margin: auto;
+  min-width: 1280px;
+  margin: 20px auto 0;
+  text-align: center;
 }
 
 .header-link {
   font-size: 28px;
   text-decoration: none;
-  color: #10191E;
+  color: #10191e;
 }
 
-.header-link:hover {
-  color: #2f80ed;
+.header-link[lang='pt-BR']:hover {
+  color: salmon;
+}
+
+.header-link[lang='pt-BR']:active {
+  opacity: 0.5;
 }
 
 .header-link::after {
-  content: "!";
+  content: '!';
 }
 
-.header-link[lang="en"]::before {
-  content: "Hello, my name is";
+.header-link[lang='pt-BR']::before {
+  content: 'Olá, meu nome é ';
 }
 
-.header-link[lang="fr"]::before {
-  content: "Bonjour, je m'appelle";
+.header-link[lang='en'] {
+  color: rgba(0, 0, 0, 0.719);
 }
 
-.header-link[lang="es"]::before {
-  content: "Hola, mi nombre es";
+.header-link[lang='en']::before {
+  content: 'Hello, my name is ';
+}
+
+.header-link[lang='fr'] {
+  color: rgba(0, 0, 0, 0.499);
+}
+
+.header-link[lang='fr']::before {
+  content: "Bonjour, je m'appelle ";
+}
+
+.header-link[lang='es'] {
+  color: rgba(0, 0, 0, 0.229);
+}
+
+.header-link[lang='es']::before {
+  content: 'Hola, mi nombre es ';
 }
 
 .title {
   margin: auto;
+  justify-self: center;
 }
 
 .project {
@@ -59,19 +80,19 @@ body {
 }
 
 .project-overlay {
-    background-color: rgba(0, 0, 100, .8);
-    height: 100%;
-    width: 100%; /* fizemos o link ocupar todo o bloco */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* centralizou o texto usando flex */
-    text-decoration: none; /* removido sublinhado */
-    color: white;
-    text-transform: uppercase;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box; /* demos ao elemento uma borda interna para evitar que o contêiner se expanda */
-    padding: 20px; /* a margem interna para evitar que o texto toque nas bordas do contêiner */
+  background-color: rgba(250, 128, 114, 0.83);
+  height: 100%;
+  width: 100%; /* fizemos o link ocupar todo o bloco */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centralizou o texto usando flex */
+  text-decoration: none; /* removido sublinhado */
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box; /* demos ao elemento uma borda interna para evitar que o contêiner se expanda */
+  padding: 20px; /* a margem interna para evitar que o texto toque nas bordas do contêiner */
   opacity: 0;
 }
 
@@ -86,6 +107,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
 }
 
 .flex-column {
@@ -101,7 +123,7 @@ body {
 
 .project_procrastinate {
   width: 636px;
-	height: 557px;
+  height: 557px;
 }
 
 .project-video {
@@ -144,23 +166,19 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 1330px;
-	min-width: 1280px;
-	margin: 40px auto;
+  min-width: 1280px;
+  margin: 40px auto;
 }
 
 .menu-link:last-of-type {
   margin-right: 0;
 }
 
-
-
 .menu-link:hover {
-  color: #2f80ed;
+  color: salmon;
 }
 
-
 .project_vanilla {
-  
   width: 306px;
   height: 290px;
 }
@@ -183,12 +201,20 @@ body {
 
 .footer {
   min-height: 95px;
-	display: flex;
+  display: flex;
   align-items: center;
-	justify-content: space-around;
+  justify-content: space-around;
   max-width: 1330px;
-	min-width: 1280px;
-	margin: auto;
+  min-width: 1280px;
+  margin: auto;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.4;
 }
 
 .logo {
@@ -213,6 +239,14 @@ body {
   justify-content: center;
 }
 
+.footer-link:hover {
+  opacity: 0.6;
+}
+
+.footer-link:active {
+  opacity: 0.4;
+}
+
 .footer-icon {
   width: 24px;
 }
@@ -222,15 +256,15 @@ body {
 }
 
 .main {
-	max-width: 1330px;
-	min-width: 1280px;
-	margin: auto;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
 }
 
 .menu-link {
   font-size: 18px;
   text-decoration: none;
-  color: #10191E;
+  color: #10191e;
   margin-right: 20px;
 }
 

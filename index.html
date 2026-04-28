@@ -1,75 +1,191 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Seu Portfólio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Elise Bouer no da TripleTen">
-  <meta name="keywords" content="html, css, javascript">
-  <meta name="author" content="TripleTen">
-</head>
-<body>
-  <header class="header">
-    <h1 class="title">
-      <a href="#" class="header-link" lang="en/fr/es">Vanessa</a>
-    </h1>
-  </header>
-  <nav class="menu">
-    <a href="#beginner" class="menu-link">Primeiros passos em HTML e CSS</a>
-    <a href="#libraries" class="menu-link">Bibliotecas JavaScript</a>
-    <a href="#practice" class="menu-link">Praticando HTML, CSS e JavaScript</a>
-  </nav>
-  <main class="main">
-    <section id="beginner">
-      <h2 class="subtitle">Primeiros passos em HTML e CSS</h2>
-      <ul class="flex-row">
-        <li class="project project_beginner project_music-album"><a href="#" class="project-overlay">Capa do álbum</a></li>
-        <li class="project project_beginner project_design-principles"><a href="#" class="project-overlay">Página de Destino</a></li>
-      </ul>
-    </section>
-    <section id="libraries">
-      <h2 class="subtitle">Bibliotecas JavaScript</h2>
-      <div class="flex-row flex-row_reversed">
-        <div class="flex-column flex-column_reversed">
-          <div class="project project_libraries project_p5">
-            <video class="project-video" src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_like.mp4" autoplay muted loop></video>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Seu Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio da Vanessa no bootcamp da TripleTen" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="TripleTen e Vanessa Yuri A. Brito" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">
+        <a
+          href="https://github.com/VanessaYuriAB"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-link"
+          lang="pt-BR"
+          >Vanessa</a
+        >
+        <br />
+        <span class="header-link" lang="en">Vanessa</span>
+        <br />
+        <span class="header-link" lang="fr">Vanessa</span>
+        <br />
+        <span class="header-link" lang="es">Vanessa</span>
+      </h1>
+    </header>
+    <nav class="menu">
+      <a href="#beginner" class="menu-link">Primeiros passos em HTML e CSS</a>
+      <a href="#practice" class="menu-link">Praticando HTML, CSS e JavaScript</a>
+      <a href="#libraries" class="menu-link">Bibliotecas React (Full-Stack)</a>
+    </nav>
+    <main class="main">
+      <section id="beginner">
+        <h2 class="subtitle">Primeiros passos em HTML e CSS</h2>
+        <ul class="flex-row">
+          <li class="project project_beginner project_music-album">
+            <a
+              href="https://github.com/VanessaYuriAB/vida-de-programadora"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-overlay"
+              >Capa do álbum</a
+            >
+          </li>
+          <li class="project project_beginner project_design-principles">
+            <a
+              href="https://github.com/VanessaYuriAB/quatro-regras-design"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-overlay"
+              >Página de Destino</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="practice">
+        <h2 class="subtitle">Praticando HTML, CSS e JavaScript</h2>
+        <ul class="flex-row">
+          <li class="project project_vanilla project_how-to-study">
+            <a
+              href="https://github.com/VanessaYuriAB/web_project_learning_to_learn"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-overlay"
+              >Animações CSS</a
+            >
+          </li>
+          <li class="project project_vanilla project_across-usa">
+            <a
+              href="https://github.com/VanessaYuriAB/web_project_homeland"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-overlay"
+              >Layout Adaptável</a
+            >
+          </li>
+          <li class="project project_vanilla project_around">
+            <a
+              href="https://github.com/VanessaYuriAB/web_project_around"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-overlay"
+              >Web App em JavaScript</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="libraries">
+        <h2 class="subtitle">Bibliotecas React (Full-Stack)</h2>
+        <div class="flex-row flex-row_reversed">
+          <div class="flex-column flex-column_reversed">
+            <div class="project project_libraries project_p5">
+              <video
+                class="project-video"
+                src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_like.mp4"
+                autoplay
+                muted
+                loop
+              ></video>
+            </div>
+            <ul class="flex-row flex-row_libraries-inner">
+              <li class="project project_libraries project_slider">
+                <a
+                  href="https://github.com/VanessaYuriAB/news-explorer-frontend"
+                  rel="noopener noreferrer"
+                  class="project-overlay"
+                  >Desacoplada</a
+                >
+              </li>
+              <li class="project project_libraries project_reactive">
+                <a
+                  href="https://github.com/VanessaYuriAB/web_project_around_react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-overlay"
+                  >Monorepo</a
+                >
+              </li>
+            </ul>
           </div>
-          <ul class="flex-row flex-row_libraries-inner">
-            <li class="project project_libraries project_slider"><a href="#" class="project-overlay">Slider</a></li>
-            <li class="project project_libraries project_reactive"><a href="#" class="project-overlay">React, Vue, Angular</a></li>
-          </ul>
+          <div class="project project_libraries project_procrastinate">
+            <video
+              class="project-video"
+              src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_procrastinate-eng.mov"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
         </div>
-        <div class="project project_libraries project_procrastinate">
-          <video class="project-video" src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_procrastinate-eng.mov" autoplay muted loop></video>
-        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a
+        href="https://tripleten.com/pt-bra/?from=us"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="logo-link"
+      >
+        <div class="logo"></div>
+      </a>
+      <p class="copyrights">Copyrights &copy; 2021, 2024 e 2026</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/vanessayuri.alvesdebrito"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png"
+            alt="Facebook"
+            class="footer-icon"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vanessa-yuri-a-brito/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+            alt="LinkedIn"
+            class="footer-icon"
+          />
+        </a>
+        <a
+          href="https://github.com/VanessaYuriAB"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/256/25/25231.png"
+            alt="GitHub"
+            class="footer-icon"
+          />
+        </a>
       </div>
-    </section>
-    <section id="practice">
-      <h2 class="subtitle">Praticando HTML, CSS e JavaScript</h2>
-      <ul class="flex-row">
-        <li class="project project_vanilla project_how-to-study"><a href="#" class="project-overlay">Animações CSS</a></li>
-        <li class="project project_vanilla project_across-usa"><a href="#" class="project-overlay">Layout Adaptável</a></li>
-        <li class="project project_vanilla project_around"><a href="#" class="project-overlay">Web App em JavaScript</a></li>
-        
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="logo"></div>
-    <p class="copyrights">Copyrights &copy; 2021</p>
-    <div class="social-icons">
-      <a href="#" class="footer-link">
-        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_facebook-icon.png" alt="Facebook" class="footer-icon">
-      </a>
-      <a href="#" class="footer-link">
-        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_twitter-icon.png" alt="Twitter" class="footer-icon">
-      </a>
-      <a href="#" class="footer-link">
-        <img src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_youtube-icon.png" alt="Youtube" class="footer-icon">
-      </a>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
